@@ -61,7 +61,7 @@
                             <div class="form-group row">
                                 <label for="mobile" class="col-2 col-form-label">Mobile No.:</label>
                                 <div class="col-10">
-                                    <input id="mobile" name="mobile" type="text"
+                                    <input id="mobile" name="mobile" type="text" maxlength="10"
                                         value="{{ $student->mobile ? $student->mobile : old('mobile') }}"
                                         class="form-control">
                                     @if ($errors->has('mobile'))

@@ -59,7 +59,7 @@
                              <div class="form-group row">
                                  <label for="mobile" class="col-2 col-form-label">Mobile No.:</label>
                                  <div class="col-10">
-                                     <input id="mobile" name="mobile" type="text" value="{{ old('mobile') }}"
+                                     <input id="mobile" name="mobile" maxlength="10" type="text" value="{{ old('mobile') }}"
                                          class="form-control">
                                      @if ($errors->has('mobile'))
                                          <span class="text-danger">{{ $errors->first('mobile') }}</span>
